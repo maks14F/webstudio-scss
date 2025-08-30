@@ -1,0 +1,162 @@
+
+
+
+.header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 52px;
+    }
+
+    &__item {
+        position: relative;
+        &:nth-child(1) .header__link::after {
+            width: 48px;
+            @extend %header-link;
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+        }
+        &:nth-child(2) .header__link::after {
+            width: 78px;
+            @extend %header-link;
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+        }
+        &:nth-child(3) .header__link::after {
+            width: 68px;
+            @extend %header-link;
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+        }
+        &:nth-child(1) .header__link:hover::after {
+            @extend %header-link;
+            opacity: 1;
+        }
+        &:nth-child(2) .header__link:hover::after {
+            @extend %header-link;
+            opacity: 1;
+        }
+        &:nth-child(3) .header__link:hover::after {
+            @extend %header-link;
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: $hover-color;
+        }
+        color: $text-color;
+        font-weight: 500;
+        font-family: $body-font;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        line-height: 1em;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+
+    &__span {
+        color: $span-logo-color;
+        animation: colorspan 2s infinite alternate;
+    }
+
+    &__roster {
+        display: flex;
+        flex-direction: row;
+        gap: 52px;
+    }
+
+    &__text {
+        color: $text-color;
+        font-weight: 700;
+        font-family: $logo-font;
+        font-size: 26px;
+        letter-spacing: 0.03%;
+        line-height: 1em;
+        padding-right: 93px;
+        animation: colorlogo 2s infinite alternate;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__wrapper {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+    &__reference {
+        &:hover {
+            color: $hover-color;
+        }
+        font-family: $body-font;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        gap: 10px;
+        color: $text-p-color;
+        letter-spacing: 0.06em;
+        line-height: 1em;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+
+    &__element {
+        &:nth-child(1):hover .header__icon {
+            fill: $hover-color;
+        }
+        &:nth-child(2):hover .header__icon {
+            fill: $hover-color;        
+        }
+
+        &:nth-child(1) .header__icon {
+            width: 16px;
+            height: 12px;
+            @extend %header-icon
+        }
+        &:nth-child(2) .header__icon {
+            width: 10px;
+            height: 16px;
+            @extend %header-icon
+        }
+    }
+}
+
+@keyframes colorlogo {
+    0% {
+        color: $text-color;
+    }
+
+    100% {
+        color: $span-logo-color;
+    }
+}
+
+@keyframes colorspan {
+    0% {
+        color: $span-logo-color;
+    }
+
+    100% {
+        color: $text-color;
+    }
+}
+
+
+

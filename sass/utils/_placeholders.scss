@@ -1,0 +1,27 @@
+%details-image {
+    content: "";
+    display: inline-block;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $portfolio-button-color;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+}
+
+%header-link {
+    content: "";
+    height: 4px;
+    background-color: $hover-color;
+    display: flex;
+    border-radius: 2px;
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+}
+
+%header-icon {
+    fill: $text-p-color;
+    transition: fill 250ms ease;
+}

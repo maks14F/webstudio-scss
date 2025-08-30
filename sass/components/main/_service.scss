@@ -1,0 +1,55 @@
+
+
+
+.service {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+    background-image: url(../image/service_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-size: 44px;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        font-weight: 900;
+        color: $title-text-color;
+        font-family:$body-font;
+        padding-bottom: 30px;
+    }
+
+    &__button {
+        padding: 10px 32px;
+        background-color: $background-button-color;
+        border: none;
+        border-radius: 3px;
+        font-weight: 700;
+        color: $title-text-color;
+        letter-spacing: 0.06em;
+        font-family:$body-font;
+        line-height: 30px;
+        font-size: 16px;
+        animation: pulse 3s infinite;
+
+        &:hover {
+            animation: none;
+        }
+    }
+
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
