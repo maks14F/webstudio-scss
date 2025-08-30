@@ -23,8 +23,7 @@
         font-size: 16px;
         letter-spacing: 0.03em;
         transition-property: background-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
         &:hover {
             background-color: $hover-color;
             color: $title-text-color;

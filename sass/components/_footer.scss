@@ -63,8 +63,7 @@
         height: 44px;
         background-color: $footer-reference-background-color;
         transition-property: background-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
         animation: none;
         &:hover {
             background-color: $hover-color;

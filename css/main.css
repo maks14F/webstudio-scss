@@ -28,6 +28,11 @@
   transition: fill 250ms ease;
 }
 
+.buttons__btn, .team__link, .clients__link, .clients__icon, .modal__textarea, .modal__input, .backdrop, .footer__reference, .header__reference, .header__link, .header__item:nth-child(3) .header__link::after, .header__item:nth-child(2) .header__link::after, .header__item:nth-child(1) .header__link::after {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -193,20 +198,14 @@ a {
 .header__item:nth-child(1) .header__link::after {
   width: 48px;
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .header__item:nth-child(2) .header__link::after {
   width: 78px;
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .header__item:nth-child(3) .header__link::after {
   width: 68px;
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .header__item:nth-child(1) .header__link:hover::after {
   opacity: 1;
@@ -225,8 +224,6 @@ a {
   letter-spacing: 0.06em;
   line-height: 1em;
   transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .header__link:hover {
   color: #2196F3;
@@ -271,8 +268,6 @@ a {
   letter-spacing: 0.06em;
   line-height: 1em;
   transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .header__reference:hover {
   color: #2196F3;
@@ -364,8 +359,6 @@ a {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   animation: none;
 }
 .footer__reference:hover {
@@ -399,8 +392,6 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: all;
   z-index: 2;
 }
@@ -473,8 +464,6 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .modal__input:focus {
   border: 1px solid #2196F3;
@@ -497,8 +486,6 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .modal__textarea:focus {
   border: 1px solid #2196F3;
@@ -631,8 +618,6 @@ a {
 .clients__icon {
   fill: #AFB1B8;
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .clients__list {
   display: flex;
@@ -644,8 +629,6 @@ a {
   border-radius: 4px;
   display: block;
   transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .clients__link:hover {
   border-color: #2196F3;
@@ -766,8 +749,6 @@ a {
   width: 44px;
   height: 44px;
   transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   border-radius: 50%;
 }
 .team__link:hover {
@@ -918,8 +899,6 @@ a {
   font-size: 16px;
   letter-spacing: 0.03em;
   transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .buttons__btn:hover {
   background-color: #2196F3;

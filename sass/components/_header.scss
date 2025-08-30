@@ -19,22 +19,19 @@
             width: 48px;
             @extend %header-link;
             transition-property: opacity;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;
+            @extend %transition;
         }
         &:nth-child(2) .header__link::after {
             width: 78px;
             @extend %header-link;
             transition-property: opacity;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;
+            @extend %transition;
         }
         &:nth-child(3) .header__link::after {
             width: 68px;
             @extend %header-link;
             transition-property: opacity;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;
+            @extend %transition;
         }
         &:nth-child(1) .header__link:hover::after {
             @extend %header-link;
@@ -61,8 +58,7 @@
         letter-spacing: 0.06em;
         line-height: 1em;
         transition-property: color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
     }
 
     &__span {
@@ -113,8 +109,7 @@
         letter-spacing: 0.06em;
         line-height: 1em;
         transition-property: color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
     }
 
     &__element {

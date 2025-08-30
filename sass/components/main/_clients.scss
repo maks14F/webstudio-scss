@@ -14,8 +14,7 @@
     &__icon {
         fill: $icons-background-color;
         transition-property: fill;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
     }
 
     &__list {
@@ -29,8 +28,7 @@
         border-radius: 4px;
         display: block;
         transition-property: border;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
         &:hover {
             border-color: $hover-color;
         }

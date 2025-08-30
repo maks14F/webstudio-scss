@@ -9,8 +9,7 @@
     height: 100%;
     background-color: $backdrop-bg-color;
     opacity: 1;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     transition-property: all;
     z-index: 2;
 }
@@ -88,8 +87,7 @@
         border: 1px solid $input-border-color;
         border-radius: 4px;
         transition-property: border;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
         &:focus {
             border: 1px solid $hover-color;
         }
@@ -114,8 +112,7 @@
         border: 1px solid $input-border-color;
         border-radius: 4px;
         transition-property: border;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        @extend %transition;
         &:focus {
             border: 1px solid $hover-color;
         }
