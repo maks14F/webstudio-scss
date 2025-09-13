@@ -35,6 +35,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .container {
@@ -186,6 +188,7 @@ a {
   padding-top: 24px;
   padding-bottom: 25px;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
 }
 .header__list {
   display: flex;
@@ -260,7 +263,6 @@ a {
 }
 .header__reference {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
   font-weight: 500;
   display: flex;
   gap: 10px;
@@ -305,9 +307,9 @@ a {
 }
 .footer {
   background-color: #2F303A;
-  font-family: "Roboto", sans-serif;
   padding-top: 60px;
   padding-bottom: 60px;
+  font-family: "Roboto", sans-serif;
 }
 .footer__span {
   color: #2196F3;
@@ -319,15 +321,12 @@ a {
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
-  letter-spacing: 0.03em;
   line-height: 1em;
 }
 .footer__link {
   color: #757575;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
   font-weight: 400;
 }
 .footer__superscription {
@@ -336,7 +335,6 @@ a {
 .footer__title {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -509,7 +507,6 @@ a {
 .modal__forma {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -531,24 +528,19 @@ a {
 .details__list {
   display: flex;
   flex-direction: row;
-  font-family: "Roboto", sans-serif;
   gap: 35px;
 }
 .details__subtitle {
   font-weight: 700;
   color: #212121;
-  font-size: 14px;
   line-height: 1em;
-  letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
 }
 .details__desc {
-  font-size: 14px;
   padding-top: 10px;
   font-weight: 400;
   color: #757575;
   line-height: 24px;
-  letter-spacing: 0.03em;
 }
 .details__item:nth-child(1)::before {
   background-image: url(../image/antenna.png);
@@ -565,6 +557,7 @@ a {
 
 .activity {
   padding-bottom: 94px;
+  font-family: "Roboto", sans-serif;
 }
 .activity__list {
   display: flex;
@@ -578,23 +571,21 @@ a {
   font-size: 36px;
   letter-spacing: 0.2;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 50px;
   color: #212121;
 }
 .activity__text {
-  padding: 27px 108px;
+  padding: 27px 80px;
   background-color: rgba(47, 48, 58, 0.8);
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
   position: absolute;
-  bottom: 1px;
+  bottom: 0.5px;
   width: 370px;
   height: 70px;
+  text-align: center;
 }
 .activity__img {
   width: 370px;
@@ -612,7 +603,6 @@ a {
   font-size: 36px;
   text-align: center;
   padding-bottom: 50px;
-  letter-spacing: 0.03em;
   font-weight: 700;
 }
 .clients__icon {
@@ -692,7 +682,6 @@ a {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #212121;
-  letter-spacing: 0.03em;
   line-height: 1em;
 }
 .team__subtitle {
@@ -702,7 +691,6 @@ a {
   font-weight: 500;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
 }
 .team__desc {
   color: #757575;
@@ -710,7 +698,6 @@ a {
   font-family: "Roboto", sans-serif;
   padding-bottom: 16px;
   font-weight: 400;
-  letter-spacing: 0.03em;
 }
 .team__item {
   background-color: #FFFFFF;
@@ -773,7 +760,6 @@ a {
   letter-spacing: 0.06em;
   font-weight: 900;
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
   padding-bottom: 30px;
 }
 .service__button {
@@ -784,7 +770,6 @@ a {
   font-weight: 700;
   color: #FFFFFF;
   letter-spacing: 0.06em;
-  font-family: "Roboto", sans-serif;
   line-height: 30px;
   font-size: 16px;
   animation: pulse 3s infinite;
@@ -843,7 +828,6 @@ a {
   padding-bottom: 20px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
   line-height: 30px;
 }
 .brief__overlay_text {
@@ -894,10 +878,8 @@ a {
   border: none;
   border-radius: 4px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   line-height: 26px;
   font-size: 16px;
-  letter-spacing: 0.03em;
   transition-property: background-color;
 }
 .buttons__btn:hover {

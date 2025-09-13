@@ -13,7 +13,6 @@
         font-weight: 700;
         font-family: $body-font;
         color: $text-color;
-        letter-spacing: 0.03em;
         line-height: 1em;
     }
 
@@ -24,7 +23,6 @@
         font-weight: 500;
         margin-bottom: 10px;
         font-family: $body-font;
-        letter-spacing: 0.03em;
     }
 
     &__desc {
@@ -33,7 +31,6 @@
         font-family: $body-font;
         padding-bottom: 16px;
         font-weight: 400;
-        letter-spacing: 0.03em;
     }
 
     &__item {

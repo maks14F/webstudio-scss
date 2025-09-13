@@ -8,26 +8,21 @@
     &__list {
         display: flex;
         flex-direction: row;
-        font-family:$body-font;
         gap: 35px;
     }
 
     &__subtitle {
         font-weight: 700;
         color: $text-color;
-        font-size: 14px;
         line-height: 1em;
-        letter-spacing: 0.03em;
         font-family: $body-font;
     }
 
     &__desc {
-        font-size: 14px;
         padding-top: 10px;
         font-weight: 400;
         color: $text-p-color;
         line-height: 24px;
-        letter-spacing: 0.03em;
     }
 
     &__item {
