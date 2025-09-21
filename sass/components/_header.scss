@@ -6,9 +6,11 @@
     justify-content: space-between;
     border-bottom: 1px solid $header-border-color;
     &__list {
+        @media screen and (min-width: 1200px) {
+            gap: 52px;
+        }
         display: flex;
         flex-direction: row;
-        gap: 52px;
     }
 
     &__item {
@@ -46,13 +48,15 @@
     }
 
     &__link {
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
         &:hover {
             color: $hover-color;
         }
         color: $text-color;
         font-weight: 500;
         font-family: $body-font;
-        font-size: 14px;
         letter-spacing: 0.06em;
         line-height: 1em;
         transition-property: color;
@@ -66,19 +70,23 @@
 
     &__roster {
         display: flex;
-        flex-direction: row;
-        gap: 52px;
+        @media screen and (min-width: 1200px) {
+            gap: 52px;
+            flex-direction: row;
+        }
     }
 
     &__text {
         color: $text-color;
         font-weight: 700;
         font-family: $logo-font;
-        font-size: 26px;
         letter-spacing: 0.03%;
         line-height: 1em;
         padding-right: 93px;
         animation: colorlogo 2s infinite alternate;
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+        }
     }
 
     &__container {
@@ -92,6 +100,7 @@
         justify-content: space-between;
         display: flex;
         width: 100%;
+        font-size: 12px;
     }
 
     &__reference {

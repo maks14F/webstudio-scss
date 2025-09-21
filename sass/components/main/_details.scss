@@ -6,9 +6,11 @@
     padding-bottom: 94px;
 
     &__list {
+        @media screen and (min-width: 1200px) {
+            gap: 35px;
+        }
         display: flex;
         flex-direction: row;
-        gap: 35px;
     }
 
     &__subtitle {
@@ -19,10 +21,13 @@
     }
 
     &__desc {
-        padding-top: 10px;
+        @media screen and (min-width: 1200px) {
+            padding-top: 10px;
+        }
         font-weight: 400;
         color: $text-p-color;
         line-height: 24px;
+        font-family: $body-font;
     }
 
     &__item {

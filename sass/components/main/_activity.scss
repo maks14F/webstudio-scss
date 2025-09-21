@@ -4,9 +4,11 @@
     font-family:$body-font;
 
     &__list {
+        @media screen and (min-width: 1200px) {
+            gap:30px;
+        }
         display: flex;
         flex-direction: row;
-        gap: 30px;
     }
     
     &__item {
@@ -14,7 +16,9 @@
     }
 
     &__title {
-        font-size: 36px;
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+        }
         letter-spacing: 0.2;
         font-weight: 700;
         text-align: center;
@@ -23,21 +27,25 @@
     }
 
     &__text {
-        padding: 27px 80px;
+        @media screen and (min-width: 1200px) {
+            padding: 27px 80px;
+            width: 370px;
+            height: 70px;
+        }
         background-color: $activity-text-bg;
         font-weight: 700;
         text-transform: uppercase;
         color: $title-text-color;
         position: absolute;
         bottom: 0.5px;
-        width: 370px;
-        height: 70px;
         text-align: center;
     }
 
     &__img {
-        width: 370px;
-        height: 294px;
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+            height: 294px;
+        }
         display: block;
     }
 }
