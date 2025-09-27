@@ -33,26 +33,6 @@
   transition-duration: 250ms;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
-.container {
-  margin: 0 auto;
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 755;
-  }
-}
-
 html,
 body,
 div,
@@ -192,6 +172,26 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 755;
+  }
+}
+
 .header {
   display: flex;
   padding-top: 24px;
@@ -200,13 +200,9 @@ a {
   border-bottom: 1px solid #ECECEC;
 }
 .header__list {
+  gap: 52px;
   display: flex;
   flex-direction: row;
-}
-@media screen and (min-width: 1200px) {
-  .header__list {
-    gap: 52px;
-  }
 }
 .header__item {
   position: relative;
@@ -235,15 +231,9 @@ a {
 .header__link {
   color: #212121;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.06em;
   line-height: 1em;
   transition-property: color;
-}
-@media screen and (min-width: 1200px) {
-  .header__link {
-    font-size: 14px;
-  }
 }
 .header__link:hover {
   color: #2196F3;
@@ -254,12 +244,8 @@ a {
 }
 .header__roster {
   display: flex;
-}
-@media screen and (min-width: 1200px) {
-  .header__roster {
-    gap: 52px;
-    flex-direction: row;
-  }
+  gap: 52px;
+  flex-direction: row;
 }
 .header__text {
   color: #212121;
@@ -269,11 +255,7 @@ a {
   line-height: 1em;
   padding-right: 93px;
   animation: colorlogo 2s infinite alternate;
-}
-@media screen and (min-width: 1200px) {
-  .header__text {
-    font-size: 26px;
-  }
+  font-size: 26px;
 }
 .header__container {
   display: flex;
@@ -285,10 +267,8 @@ a {
   justify-content: space-between;
   display: flex;
   width: 100%;
-  font-size: 12px;
 }
 .header__reference {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   display: flex;
   gap: 10px;
@@ -335,32 +315,28 @@ a {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  font-family: "Roboto", sans-serif;
 }
 .footer__span {
   color: #2196F3;
-  font-family: var(--logo-font);
+  font-family: "Raleway", sans-serif;
 }
 .footer__text {
   color: #FFFFFF;
   margin-bottom: 20px;
-  font-family: var(--logo-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1em;
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Roboto", sans-serif;
   line-height: 24px;
-  font-weight: 400;
 }
 .footer__superscription {
   color: #FFFFFF;
+  line-height: 24px;
 }
 .footer__title {
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -453,7 +429,6 @@ a {
 }
 .modal__title {
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding-top: 40px;
   letter-spacing: 1px;
@@ -467,7 +442,6 @@ a {
   padding-left: 20px;
 }
 .modal__label {
-  font-family: "Roboto", sans-serif;
   color: rgb(117, 117, 117);
   font-size: 12px;
   font-weight: 400;
@@ -501,7 +475,6 @@ a {
 .modal__textarea {
   width: 448px;
   height: 120px;
-  font-family: "Roboto", sans-serif;
   color: rgb(117, 117, 117);
   font-size: 12px;
   font-weight: 400;
@@ -517,7 +490,6 @@ a {
 .modal__btn {
   padding: 10px 52px;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   border: none;
   color: #FFFFFF;
@@ -531,7 +503,6 @@ a {
   color: #2196F3;
 }
 .modal__forma {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 24px;
   padding-top: 20px;
@@ -552,30 +523,20 @@ a {
   padding-bottom: 94px;
 }
 .details__list {
+  gap: 30px;
   display: flex;
   flex-direction: row;
-}
-@media screen and (min-width: 1200px) {
-  .details__list {
-    gap: 35px;
-  }
 }
 .details__subtitle {
   font-weight: 700;
   color: #212121;
   line-height: 1em;
-  font-family: "Roboto", sans-serif;
 }
 .details__desc {
+  padding-top: 10px;
   font-weight: 400;
   color: #757575;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
-}
-@media screen and (min-width: 1200px) {
-  .details__desc {
-    padding-top: 10px;
-  }
 }
 .details__item:nth-child(1)::before {
   background-image: url(../image/antenna.png);
@@ -592,33 +553,27 @@ a {
 
 .activity {
   padding-bottom: 94px;
-  font-family: "Roboto", sans-serif;
 }
 .activity__list {
+  gap: 30px;
   display: flex;
   flex-direction: row;
-}
-@media screen and (min-width: 1200px) {
-  .activity__list {
-    gap: 30px;
-  }
 }
 .activity__item {
   position: relative;
 }
 .activity__title {
+  font-size: 36px;
   letter-spacing: 0.2;
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
   color: #212121;
 }
-@media screen and (min-width: 1200px) {
-  .activity__title {
-    font-size: 36px;
-  }
-}
 .activity__text {
+  padding: 27px 80px;
+  width: 370px;
+  height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   text-transform: uppercase;
@@ -627,21 +582,10 @@ a {
   bottom: 0.5px;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
-  .activity__text {
-    padding: 27px 80px;
-    width: 370px;
-    height: 70px;
-  }
-}
 .activity__img {
+  width: 370px;
+  height: 294px;
   display: block;
-}
-@media screen and (min-width: 1200px) {
-  .activity__img {
-    width: 370px;
-    height: 294px;
-  }
 }
 
 .clients {
@@ -650,7 +594,6 @@ a {
 }
 .clients__title {
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
   font-size: 36px;
   text-align: center;
   padding-bottom: 50px;
@@ -731,9 +674,7 @@ a {
   padding-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   color: #212121;
-  line-height: 1em;
 }
 .team__subtitle {
   padding-top: 30px;
@@ -741,14 +682,11 @@ a {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
 }
 .team__desc {
   color: #757575;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   padding-bottom: 16px;
-  font-weight: 400;
 }
 .team__item {
   background-color: #FFFFFF;
@@ -801,7 +739,7 @@ a {
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
-  background-image: url(../image/service_background.jpg);
+  background-image: linear-gradient(to bottom right, rgba(47, 48, 58, 0.4)), url(../image/service_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -809,7 +747,6 @@ a {
   font-weight: 900;
   color: #FFFFFF;
   padding-bottom: 30px;
-  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 1200px) {
   .service__title {
@@ -854,7 +791,6 @@ a {
   padding-top: 50px;
 }
 .brief__item {
-  font-family: "Roboto", sans-serif;
   border: 1px solid #EEEEEE;
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
@@ -875,9 +811,8 @@ a {
   font-size: 18px;
   margin-top: 20px;
   padding-left: 24px;
-  line-height: 38px;
+  line-height: 36px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.06em;
 }
 .brief__desc {
@@ -887,15 +822,13 @@ a {
   padding-left: 24px;
   padding-bottom: 20px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   line-height: 30px;
 }
 .brief__overlay_text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 28px;
   font-size: 18px;
-  color: white;
+  color: #EEEEEE;
   padding: 63px 23px;
 }
 .brief__overlay {
@@ -941,10 +874,11 @@ a {
   line-height: 26px;
   font-size: 16px;
   color: #212121;
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   font-family: "Roboto", sans-serif;
 }
 .buttons__btn:hover {
   background-color: #2196F3;
   color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 3px;
 }

@@ -3,7 +3,6 @@
     padding-top: 50px;
 
     &__item {
-        font-family: $body-font;
         border: 1px solid $background-all-portfolio-color;
         flex-basis: calc((100% - 60px) / 3);
         position: relative;
@@ -25,9 +24,8 @@
         font-size: 18px;
         margin-top: 20px;
         padding-left: 24px;
-        line-height: 38px;
+        line-height: 36px;
         font-weight: 700;
-        font-family: $body-font;
         letter-spacing: 0.06em;
     }
 
@@ -37,17 +35,15 @@
         padding-top: 4px;
         padding-left: 24px;
         padding-bottom: 20px;
-        font-weight: 400;
-        font-family: $body-font;
+        font-weight: 400;   
         line-height: 30px;
     }
 
     &__overlay_text {
-        font-family: $body-font;
         font-weight: 400;
         line-height: 28px;
         font-size: 18px;
-        color: white;
+        color: $background-all-portfolio-color;
         padding: 63px 23px;
     }
 

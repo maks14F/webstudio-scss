@@ -21,12 +21,13 @@
         line-height: 26px;
         font-size: 16px;
         color: $buttons-text-color;
-        transition-property: background-color;
+        transition-property: background-color, box-shadow;
         font-family: $body-font;
         @extend %transition;
         &:hover {
             background-color: $hover-color;
             color: $title-text-color;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 3px;
         }
     }
 }

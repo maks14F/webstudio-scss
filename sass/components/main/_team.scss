@@ -11,9 +11,7 @@
         padding-bottom: 50px;
         font-size: 36px;
         font-weight: 700;
-        font-family: $body-font;
         color: $text-color;
-        line-height: 1em;
     }
 
     &__subtitle {
@@ -22,15 +20,12 @@
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 10px;
-        font-family: $body-font;
     }
 
     &__desc {
         color: $text-p-color;
-        font-size: 15px;
-        font-family: $body-font;
+        font-size: 16px; 
         padding-bottom: 16px;
-        font-weight: 400;
     }
 
     &__item {

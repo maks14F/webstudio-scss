@@ -4,36 +4,32 @@
     background-color: $background-section-color;
     padding-top: 60px;
     padding-bottom: 60px;
-    font-family:$body-font;
 
     &__span {
         color: $span-logo-color;
-        font-family: var(--logo-font);
+        font-family: $logo-font;
     }
 
     &__text {
         color: $title-text-color;
         margin-bottom: 20px;
-        font-family: var(--logo-font);
+        font-family: $logo-font;
         font-weight: 700;
         font-size: 26px;
-        line-height: 1em;
     }
 
     &__link {
         color: $footer-link-color;
-        font-family: $body-font;
         line-height: 24px;
-        font-weight: 400;
     }
 
     &__superscription {
         color: $title-text-color;
+        line-height: 24px;
     }
 
     &__title {
         color: $title-text-color;
-        font-family: $body-font;
         font-weight: bold;
         text-transform: uppercase;
         padding-bottom: 20px;

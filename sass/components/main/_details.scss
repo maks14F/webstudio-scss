@@ -6,9 +6,7 @@
     padding-bottom: 94px;
 
     &__list {
-        @media screen and (min-width: 1200px) {
-            gap: 35px;
-        }
+        gap: 30px;
         display: flex;
         flex-direction: row;
     }
@@ -17,17 +15,13 @@
         font-weight: 700;
         color: $text-color;
         line-height: 1em;
-        font-family: $body-font;
     }
 
     &__desc {
-        @media screen and (min-width: 1200px) {
-            padding-top: 10px;
-        }
+        padding-top: 10px;
         font-weight: 400;
         color: $text-p-color;
         line-height: 24px;
-        font-family: $body-font;
     }
 
     &__item {

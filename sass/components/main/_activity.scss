@@ -1,12 +1,9 @@
 
 .activity {
     padding-bottom: 94px;
-    font-family:$body-font;
 
     &__list {
-        @media screen and (min-width: 1200px) {
-            gap:30px;
-        }
+        gap:30px;
         display: flex;
         flex-direction: row;
     }
@@ -16,9 +13,7 @@
     }
 
     &__title {
-        @media screen and (min-width: 1200px) {
-            font-size: 36px;
-        }
+        font-size: 36px;
         letter-spacing: 0.2;
         font-weight: 700;
         text-align: center;
@@ -27,11 +22,9 @@
     }
 
     &__text {
-        @media screen and (min-width: 1200px) {
-            padding: 27px 80px;
-            width: 370px;
-            height: 70px;
-        }
+        padding: 27px 80px;
+        width: 370px;
+        height: 70px;
         background-color: $activity-text-bg;
         font-weight: 700;
         text-transform: uppercase;
@@ -42,10 +35,8 @@
     }
 
     &__img {
-        @media screen and (min-width: 1200px) {
-            width: 370px;
-            height: 294px;
-        }
+        width: 370px;
+        height: 294px;
         display: block;
     }
 }
